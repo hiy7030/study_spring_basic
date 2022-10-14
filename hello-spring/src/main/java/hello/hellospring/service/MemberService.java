@@ -6,11 +6,12 @@ import hello.hellospring.repository.MemoryMemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
-
+@Transactional
 public class MemberService {
     // 회원 리포지토리 생성
 //    private final MemberRepository memberRepository = new MemoryMemberRepository();

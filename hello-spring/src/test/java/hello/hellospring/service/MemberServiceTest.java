@@ -36,7 +36,7 @@ class MemberServiceTest {
     }
 
     @Test // 정상 플로우 테스트
-    void join() {
+    void 회원가입() {
         //given -> 무언가 주어졌음
         Member member = new Member();
         member.setName("hello");
